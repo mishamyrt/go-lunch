@@ -1,4 +1,4 @@
-# Go Lunch
+# Go Lunch [![Quality assurance](https://github.com/mishamyrt/go-lunch/actions/workflows/quality-assurance.yaml/badge.svg)](https://github.com/mishamyrt/go-lunch/actions/workflows/quality-assurance.yaml) [![GitHub release](https://img.shields.io/github/v/tag/mishamyrt/go-lunch)](https://GitHub.com/mishamyrt/go-lunch/releases/)
 
 <img src="./docs/logo@2x.png" align="right" width="128" />
 
