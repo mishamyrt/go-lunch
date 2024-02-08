@@ -8,7 +8,17 @@ A library for easily creating launch agent files to autorun your applications in
 - **Pure Golang**
 - **Safe**
 
+## Installation
+
+Run command at your project directory.
+
+```sh
+go get -u github.com/mishamyrt/go-lunch
+```
+
 ## Usage
+
+Create `Agent` instance with required fields: `PackageName`, `Command`, `Path`. For path you can use `UserPath` and `SharedPath` helpers. It returns launch agent path.
 
 ```go
 package main
@@ -27,3 +37,12 @@ func main() {
 	agent.Write()
 }
 ```
+
+### Parameters
+
+- `PackageName` - App package name
+- `KeepAlive` - Restart app on exit
+- `Command` - App start command
+- `StandardOutPath` - App stdout. Defaults to /dev/null
+- `StandardErrorPath`- App stderr. Defaults to /dev/null
+- `Path` - Launch Agent path
