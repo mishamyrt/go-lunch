@@ -26,13 +26,13 @@ lint:
 test:
 	go test -cover ./...
 
-.PHONY: changelog
-changelog:
+.PHONY: release
+release:
 # Create tag for changelog generator
 	git tag "$(VERSION)"
 	git-chglog -o CHANGELOG.md
 	git commit -am 'chore: release $(VERSION)'
 # Recreate tag after commit
-	git tag -D "$(VERSION)"
+	git tag -d "$(VERSION)"
 	git tag "$(VERSION)"
 	
