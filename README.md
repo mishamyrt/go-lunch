@@ -1,6 +1,6 @@
 # Go Lunch
 
-<img src="./docs/logo.svg" align="right" width="70" />
+<img src="./docs/logo@2x.png" align="right" width="128" />
 
 A library for easily creating launch agent files to autorun your applications in macOS.
 
